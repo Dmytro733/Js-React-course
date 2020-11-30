@@ -34,8 +34,33 @@ const personalMovieDB = {
     genres: [],
     privat: false
 };
+let i = 0
 
-for(let i = 0; i <= 1; i++){
+// while(i <= 1){
+//     let lastFilms = prompt('Один из последних просмотренных фильмов?', ''),
+//     reatingFilms = prompt('На сколько оцените его?', '');
+
+//     if(lastFilms != null && reatingFilms != null && lastFilms != '' && reatingFilms != '' && lastFilms.length < 50){
+//         personalMovieDB.movies[lastFilms] = reatingFilms;
+//     }else{
+//         i--;
+//     }
+//     i++
+// };
+
+// do{
+//     let lastFilms = prompt('Один из последних просмотренных фильмов?', ''),
+//     reatingFilms = prompt('На сколько оцените его?', '');
+
+//     if(lastFilms != null && reatingFilms != null && lastFilms != '' && reatingFilms != '' && lastFilms.length < 50){
+//         personalMovieDB.movies[lastFilms] = reatingFilms;
+//     }else{
+//         i--;
+//     }
+//     i++
+// }while(i <= 1);
+
+for(; i <= 1; i++){
     let lastFilms = prompt('Один из последних просмотренных фильмов?', ''),
         reatingFilms = prompt('На сколько оцените его?', '');
     
