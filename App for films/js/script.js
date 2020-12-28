@@ -41,9 +41,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
           checbox = form.querySelector('[type="checkbox"]');
           
 
-  
-    
-
     form.addEventListener('submit', (event) => {
         event.preventDefault();
 
