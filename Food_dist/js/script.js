@@ -141,7 +141,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //Use classes for menu cart
 
-    class MenuCard {
+    class MenuCart {
         constructor(src, alt, title, descr, price, parentSelector, ...classes){
             this.src = src;
             this.alt = alt;
@@ -160,7 +160,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         render(){
             const element = document.createElement('div');
-            
+
             if(this.classes.length === 0){
                 this.element = 'menu__item';
                 element.classList.add(this.element);
@@ -184,7 +184,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    new MenuCard(
+    new MenuCart(
         "img/tabs/vegy.jpg",
         "vegy",
         'Меню "Фитнес"',
@@ -195,7 +195,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     ).render();
 
-    new MenuCard(
+    new MenuCart(
         "img/tabs/elite.jpg",
         "elite",
         'Меню "Премиум"',
@@ -206,7 +206,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     ).render();
 
-    new MenuCard(
+    new MenuCart(
         "img/tabs/post.jpg", 
         "post",
         'Меню "Постное"',
@@ -216,3 +216,4 @@ window.addEventListener('DOMContentLoaded', () => {
         "menu__item"
     ).render();
 });
+
